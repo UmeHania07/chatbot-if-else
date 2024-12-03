@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #8e8ea7; */
+    background-image: url(images/hotel1.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chatbot {
+    width: 400px;
+    /* background-color: #fff; */
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#chatbox {
+    height: 300px;
+    overflow-y: auto;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* background-color: #f9f9f9; */
+    background: transparent;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.message.bot {
+    color: #fff;
+}
+
+.message.user {
+    text-align: right;
+    color: #fff;;
+}
+
+#userInput {
+    width: calc(100% - 60px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+#userInput::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+#sendBtn {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    background-color: #0056b3;
+    border: 1px solid white;
+}
